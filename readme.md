@@ -3,14 +3,15 @@
 ### Prak 4 PWL Webservice
 
 
-#Menjalankan sisi server
+#### Menjalankan sisi server
 Server yang digunakan adalah laravel
+- Memasang database ```portofolio_frinaldo.sql```
+- Menjalankan ```php artisan serve``` untuk memulai server
 
-```php artisan serve```
-
-#Menjalankan sisi client
+#### Menjalankan sisi client
 Client side yang di gunakan adalah react
-```yarn start```
+
+-Menjalankan ```yarn start```
 
 Instalasi package tambahan
 ```
