@@ -29,7 +29,7 @@ function Deskripsi() {
         formData.append('project_id', id)
 
 
-        await axios.post(`http://localhost:8000/api/komen`, formData).then(({ data }) => {
+        await axios.post(`https://server-frinaldosinaga.herokuapp.com/api/komen`, formData).then(({ data }) => {
             Swal.fire({
                 icon: "success",
                 text: data.message
@@ -49,12 +49,12 @@ function Deskripsi() {
 
     useEffect(() => {
         async function getDaftar() {
-            const response = await fetch(`http://127.0.0.1:8000/api/projects/${id}`);
+            const response = await fetch(`https://server-frinaldosinaga.herokuapp.com/api/projects/${id}`);
             const json = await response.json();
             setDaftar(json.data)
         }
         async function getKomentar() {
-            const response = await fetch(`http://127.0.0.1:8000/api/list-komen/${id}`);
+            const response = await fetch(`https://server-frinaldosinaga.herokuapp.com/api/list-komen/${id}`);
             const json = await response.json();
             setListKomen(json.data)
         }
