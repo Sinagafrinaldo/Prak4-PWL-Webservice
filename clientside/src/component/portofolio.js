@@ -8,7 +8,7 @@ const Portofolio = () => {
 
     useEffect(() => {
         async function getDaftar() {
-            const response = await fetch("http://127.0.0.1:8000/api/projects");
+            const response = await fetch("https://server-frinaldosinaga.herokuapp.com/api/projects");
             const json = await response.json();
             setDaftar(json.data)
         }
